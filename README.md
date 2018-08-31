@@ -9,10 +9,10 @@ just move the SSH.php file and the ssh folder into your libraries folder, this c
 
 ```PHP
 $this->load->library('SSH', array(  
-  'your.host',  
-  'username',  
-  'password',
-  'port'  
+  'host' => 'your.host',  
+  'user' => 'username',  
+  'pass' => 'password',
+  'port' => 'port'  
 ));  
 echo $SSH->exec('pwd');  
 echo $SSH->exec('ls -la');
