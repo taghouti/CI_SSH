@@ -14,6 +14,6 @@ $this->load->library('SSH', array(
   'pass' => 'password',
   'port' => 'port'  
 ));  
-echo $SSH->exec('pwd');  
-echo $SSH->exec('ls -la');
+echo $this->ssh->exec('pwd');  
+echo $this->ssh->exec('ls -la');
 ```
